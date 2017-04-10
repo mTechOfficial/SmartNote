@@ -4,13 +4,13 @@ Following one coding style can ease the way we develop and debug code; therefore
 1. File Header
 
 ...Every time you create a new file you must include 4 main parts.
-..1. File Name
+..*. File Name
 ...Enter the name of the file/class.
-..2. Your Name
+..*. Your Name
 ...The name of the person created the file and responsible on coding it.
-..3. Date Created
+..*. Date Created
 ...The date you created the file/class and this date should not be changed at all.
-..4. Description of the file
+..*. Description of the file
 ...Include a paragraph describing the purpose of this file/class.
 ### Example
 ...For example I will create a class called Login.
