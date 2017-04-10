@@ -10,7 +10,7 @@ Following one coding style can ease the way we develop and debug code; therefore
 ### Example
 For example I will create a class called Login.
 
-```/*/*
+```/* /*
 						  Login.cs
 						Muhand Jumah
 						 04/10/2017
