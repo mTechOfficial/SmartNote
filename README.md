@@ -10,7 +10,7 @@ Following one coding style can ease the way we develop and debug code; therefore
 ### Example
 For example I will create a class called Login.
 
-```/*
+```/*/*
 						  Login.cs
 						Muhand Jumah
 						 04/10/2017
@@ -20,4 +20,4 @@ For example I will create a class called Login.
  remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
  Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
  of Lorem Ipsum.
-*/`
+*/
