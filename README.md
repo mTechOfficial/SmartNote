@@ -1,6 +1,5 @@
-1. First ordered list item
-2. Another item
-⋅⋅* Unordered sub-list. 
-1. Actual numbers don't matter, just that it's a number
-⋅⋅1. Ordered sub-list
-4. And another item.
+# SmartNote
+## Coding style
+Following one coding style can ease the way we develop and debug code; therefore, this section will include the coding style you should be following.
+1. File Header
+   1. File Name (Enter the name of the file/class).
