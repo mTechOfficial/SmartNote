@@ -2,9 +2,6 @@
 ## Coding style
 Following one coding style can ease the way we develop and debug code; therefore, this section will include the coding style you should be following.
 1. File Header
-
-...Every time you create a new file you must include 4 main parts...
-
 ..* File Name (Enter the name of the file/class).
 ..* Your Name (The name of the person created the file and responsible on coding it).
 ..* Date Created (The date you created the file/class and this date should not be changed at all).
