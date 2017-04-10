@@ -13,6 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartNote.UWP", "SmartNote\
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SmartNote\SmartNote\SmartNote.projitems*{8d84ee0b-9806-4999-a636-78f37787abdb}*SharedItemsImports = 4
 		SmartNote\SmartNote\SmartNote.projitems*{b1b4a9e5-9882-4593-b196-731c56659a61}*SharedItemsImports = 4
 		SmartNote\SmartNote\SmartNote.projitems*{de17c7c9-0b70-41b6-8873-9a79559f9302}*SharedItemsImports = 13
 		SmartNote\SmartNote\SmartNote.projitems*{e914eb4d-9aba-43cf-81de-0a74819ca9ae}*SharedItemsImports = 4
