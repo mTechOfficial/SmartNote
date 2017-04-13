@@ -26,7 +26,6 @@ namespace SmartNote.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::SmartNote.Droid.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation
