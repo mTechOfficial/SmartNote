@@ -12,9 +12,18 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Globals.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controllers\CodeGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\Repeat.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\Visibility.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ClassGroup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Group.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Settings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\StudyGroup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
@@ -25,5 +34,8 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Views\" />
   </ItemGroup>
 </Project>
