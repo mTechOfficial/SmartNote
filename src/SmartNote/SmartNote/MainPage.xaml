@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:SmartNote"
              x:Class="SmartNote.MainPage">
 
-    <Label Text="GOT IT TO WORK!" 
+    <Label Text="GOT IT TO WORK!  aa" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
 </ContentPage>
