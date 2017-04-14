@@ -52,7 +52,7 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <IOSDebugOverWiFi>False</IOSDebugOverWiFi>
     <IOSDebuggerPort>10000</IOSDebuggerPort>
-    <CodesignProvision>cfda00ac-22a5-47a7-bb85-24d6330e48aa</CodesignProvision>
+    <CodesignProvision>8d4dbf1a-733f-45d5-903a-f3eb44ec0823</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
