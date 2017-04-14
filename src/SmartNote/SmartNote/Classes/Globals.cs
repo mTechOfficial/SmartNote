@@ -3,6 +3,8 @@
 						  Zhi Qiu
 						 04/10/2017
  Class object holding globally shared data.
+ Revised by: Muhand Jumah
+ Revised on: 4/14/2017
 */
 using Xamarin.Forms;
 using SmartNote.Models;
@@ -12,6 +14,8 @@ namespace SmartNote.Classes
     class Globals
     {
         // static fields
+        private static ContentView loginPage;
+        private static ContentView registerPage;
         private static ContentView dashboard;
         private static ContentView publicClasses;
         private static ContentView privateClasses;
@@ -19,6 +23,7 @@ namespace SmartNote.Classes
         private static ContentView settings;
         private static ContentView currentPage;
         private static ContentView profilePage;
+        private static ContentPage mainPage;
         private static User currentUser;
 
         // public static properties
@@ -50,7 +55,11 @@ namespace SmartNote.Classes
         public static ContentView CurrentPage
         {
             get { return currentPage; }
-            set { currentPage = value; }
+            set
+            {
+                currentPage = value;
+                mainPage.Content = currentPage;
+            }
         }
         public static ContentView ProfilePage
         {
@@ -61,6 +70,24 @@ namespace SmartNote.Classes
         {
             get { return currentUser; }
             set { currentUser = value; }
+        }
+        
+        public static ContentView LoginPage
+        {
+            get { return loginPage; }
+            set { loginPage = value; }
+        }
+
+        public static ContentView RegisterPage
+        {
+            get { return registerPage; }
+            set { registerPage = value; }
+        }
+
+        public static ContentPage MainPage
+        {
+            get { return mainPage; }
+            set { mainPage = value; }
         }
     }
 }
