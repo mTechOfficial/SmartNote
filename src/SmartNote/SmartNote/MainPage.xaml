@@ -4,8 +4,7 @@
              xmlns:local="clr-namespace:SmartNote"
              x:Class="SmartNote.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
+    <Label Text="GOT IT TO WORK!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
-
 </ContentPage>
