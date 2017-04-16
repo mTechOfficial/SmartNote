@@ -25,7 +25,10 @@ namespace SmartNote.iOS
 			global::Xamarin.Forms.Forms.Init ();
 			LoadApplication (new SmartNote.App ());
 
-			return base.FinishedLaunching (app, options);
+            Classes.Globals.ScreenWidth = (int)UIScreen.MainScreen.Bounds.Width;
+            Classes.Globals.ScreenHeight = (int)UIScreen.MainScreen.Bounds.Height;
+
+            return base.FinishedLaunching (app, options);
 		}
 	}
 }

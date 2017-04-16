@@ -1,40 +1,38 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SmartNote.Views.Login">
-  <ContentView.Content>
+    <ContentView.Content>
         <Grid BackgroundColor="#474747">
+
             <Label Text="SmartNote" FontSize="50" FontAttributes="Bold" 
                    FontFamily="Arial Rounded MT" TextColor="#95989A"
-                   Margin="58,98,0,0"/>
+                   x:Name="logo"/>
 
-            <Entry WidthRequest="243" FontSize="30"
+            <Entry FontSize="30"
                    FontFamily="Segoe UI" Placeholder="Username"
-                   TextColor="White" Margin="67, 231, 0, 0"
+                   TextColor="White"
                    HorizontalOptions="Start" VerticalOptions="Start"
-                   BackgroundColor="Transparent"/>
-
-            <Entry WidthRequest="243" FontSize="30"
+                   BackgroundColor="Transparent" x:Name="username" Focused="field_Focused" Unfocused="field_Unfocused"/>
+            
+            <Entry FontSize="30"
                    FontFamily="Segoe UI" Placeholder="Password"
                    TextColor="White" IsPassword="True" 
-                   Margin="67, 334, 0, 0"
                    HorizontalOptions="Start" VerticalOptions="Start"
-                   BackgroundColor="Transparent"/>
+                   BackgroundColor="Transparent" x:Name="password" Focused="field_Focused" Unfocused="field_Unfocused"/>
 
             <Button Text="Login" BackgroundColor="#17BF5A"
-                    WidthRequest="324" HeightRequest="49"
-                    Margin="26, 494, 0, 0" FontSize="30"
+                    FontSize="30"
                     FontFamily="Segoe UI" TextColor="White"
                     HorizontalOptions="Start" VerticalOptions="Start"
-                    Clicked="Login_Clicked"/>
+                    Clicked="Login_Clicked" x:Name="loginBtn"/>
 
             <Button Text="Register" BackgroundColor="#17BF5A"
-                    WidthRequest="324" HeightRequest="49"
-                    Margin="26, 552, 0, 0" FontSize="30"
+                    FontSize="30"
                     FontFamily="Segoe UI" TextColor="White"
-                    HorizontalOptions="Start" VerticalOptions="Start"/>
-
+                    HorizontalOptions="Start" VerticalOptions="Start" x:Name="registerBtn"/>
+            
             <Label Text="Product of mTech Inc." TextColor="White"
                    FontSize="12" FontFamily="Segoe UI"
-                   Margin="235, 649, 0, 0"/>
+                   x:Name="copyright" HorizontalOptions="Start" VerticalOptions="Start"/>
         </Grid>
-  </ContentView.Content>
+    </ContentView.Content>
 </ContentView>

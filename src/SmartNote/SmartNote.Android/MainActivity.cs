@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Xamarin.Forms;
 
 namespace SmartNote.Droid
 {
@@ -15,11 +16,17 @@ namespace SmartNote.Droid
 		protected override void OnCreate (Bundle bundle)
 		{
 			TabLayoutResource = Resource.Layout.Tabbar;
-			ToolbarResource = Resource.Layout.Toolbar; 
+			ToolbarResource = Resource.Layout.Toolbar;
+            
+            base.OnCreate (bundle);
 
-			base.OnCreate (bundle);
+            Classes.Globals.ScreenWidth = (int)(Resources.DisplayMetrics.WidthPixels / Resources.DisplayMetrics.Density);
+            Classes.Globals.ScreenHeight = (int)(Resources.DisplayMetrics.HeightPixels / Resources.DisplayMetrics.Density);
 
-			global::Xamarin.Forms.Forms.Init (this, bundle);
+            this.Window.AddFlags(WindowManagerFlags.Fullscreen);
+
+            global::Xamarin.Forms.Forms.Init (this, bundle);
+
 			LoadApplication (new SmartNote.App ());
 		}
 	}

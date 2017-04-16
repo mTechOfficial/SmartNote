@@ -25,6 +25,8 @@ namespace SmartNote.Classes
         private static ContentView profilePage;
         private static ContentPage mainPage;
         private static User currentUser;
+        private static int screenWidth;
+        private static int screenHeight;
 
         // public static properties
         public static ContentView Dashboard
@@ -88,6 +90,16 @@ namespace SmartNote.Classes
         {
             get { return mainPage; }
             set { mainPage = value; }
+        }
+        public static int ScreenWidth
+        {
+            get { return screenWidth; }
+            set { screenWidth = value; }
+        }
+        public static int ScreenHeight
+        {
+            get { return screenHeight; }
+            set { screenHeight = value; }
         }
     }
 }
