@@ -36,7 +36,7 @@ namespace SmartNote
         {
             Classes.Globals.MainPage = (ContentPage)MainPage;
             Classes.Globals.Dashboard = new Views.Dashboard();
-            Classes.Globals.LoginPage = new Views.Login();
+            Classes.Globals.LoginPage = new Views.Login2();
             Classes.Globals.CurrentPage = startUpPage();
         }
 

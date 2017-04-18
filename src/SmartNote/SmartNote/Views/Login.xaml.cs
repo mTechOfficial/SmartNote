@@ -30,29 +30,16 @@ namespace SmartNote.Views
             
 
             //Height
-            //setSize(loginBtn, 49, 324);
-            //setSize(registerBtn, 49, 324);
-            //setSize(username, 43, 243);
-            //setSize(password, 43, 243);
             loginBtn.WidthRequest = calculateMargin(0.864f, Classes.Globals.ScreenWidth);
-            //loginBtn.HeightRequest = calculateMargin(0.0734632683658171f, Classes.Globals.ScreenHeight);
             registerBtn.WidthRequest = calculateMargin(0.864f, Classes.Globals.ScreenWidth);
             username.WidthRequest = calculateMargin(0.648f, Classes.Globals.ScreenWidth);
             password.WidthRequest = calculateMargin(0.648f, Classes.Globals.ScreenWidth);
-            //registerBtn.HeightRequest = calculateMargin(0.0734632683658171f, Classes.Globals.ScreenHeight);
 
         }
         private void setPosition(View controller, float x, float y)
         {
             controller.Margin = new Thickness(calculateMargin(x, Classes.Globals.ScreenWidth),
                 calculateMargin(y, Classes.Globals.ScreenHeight), 0, 0);
-        }
-        private void setSize(View controller, float height, float width)
-        {
-            controller.HeightRequest = (height / 667) * Classes.Globals.ScreenHeight;
-            controller.WidthRequest = (width / 375) * Classes.Globals.ScreenWidth;
-            //controller.Margin = new Thickness(calculateMargin(x, Classes.Globals.ScreenWidth),
-            //    calculateMargin(y, Classes.Globals.ScreenHeight), 0, 0);
         }
 
         private void Login_Clicked(object sender, EventArgs e)
