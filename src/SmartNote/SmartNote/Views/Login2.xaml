@@ -23,7 +23,7 @@
             </StackLayout>
 
             <Button Text="Sign in with mTech" BackgroundColor="#17BF5A"
-                    FontSize="25"
+                    FontSize="16"
                     FontFamily="Segoe UI" TextColor="White"
                     HorizontalOptions="Start" VerticalOptions="Start"
                     x:Name="mtechLoginBtn"/>
@@ -44,26 +44,26 @@
                          x:Name="facebookIcon"/>-->
 
             <Button BackgroundColor="#334E88" Text="f"
-                    FontSize="25"
+                    FontSize="16"
                     FontFamily="Segoe UI" TextColor="White"
                     HorizontalOptions="Start" VerticalOptions="Start"
                     x:Name="facebookIcon"/>
 
             <Button Text="Sign in with Facebook" BackgroundColor="#3A589A"
-                    FontSize="25"
+                    FontSize="16"
                     FontFamily="Segoe UI" TextColor="White"
                     HorizontalOptions="Start" VerticalOptions="Start"
                     x:Name="facebookLoginBtn"/>
             <!--</StackLayout>-->
 
             <Button BackgroundColor="#C5412D" Text="g"
-                    FontSize="25"
+                    FontSize="16"
                     FontFamily="Segoe UI" TextColor="White"
                     HorizontalOptions="Start" VerticalOptions="Start"
                     x:Name="gmailIcon"/>
 
             <Button Text="Sign in with Gmail" BackgroundColor="#DF4A33"
-                    FontSize="25"
+                    FontSize="16"
                     FontFamily="Segoe UI" TextColor="White"
                     HorizontalOptions="Start" VerticalOptions="Start"
                     x:Name="gmailLoginBtn" Clicked="gmailLoginBtn_Clicked"/>

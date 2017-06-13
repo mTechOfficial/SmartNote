@@ -13,7 +13,9 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Classes\Globals.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controllers\AWSController.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controllers\CodeGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controllers\MySQLController.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Enums\Repeat.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Enums\Visibility.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">

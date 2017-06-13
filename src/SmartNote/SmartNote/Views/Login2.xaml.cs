@@ -14,6 +14,7 @@ namespace SmartNote.Views
         {
             InitializeComponent();
             init();
+            Controllers.MySQLController.CreateAccount("emailtest", "passwordtest");
         }
 
         /// <summary>
@@ -82,7 +83,7 @@ namespace SmartNote.Views
 
         private void gmailLoginBtn_Clicked(object sender, EventArgs e)
         {
-            Classes.Globals.CurrentPage = new Views.Login();
+            //Classes.Globals.CurrentPage = new Views.Login();
         }
     }
 }
