@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="4b86481c-8007-442c-ba7e-4a8c307a85fa"
+    Name="96a3e9a0-03c2-4195-801b-1b50d81d3220"
     Publisher="CN=Muhand"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="4b86481c-8007-442c-ba7e-4a8c307a85fa" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="96a3e9a0-03c2-4195-801b-1b50d81d3220" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>SmartNote.UWP</DisplayName>

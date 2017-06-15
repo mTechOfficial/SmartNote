@@ -32,7 +32,6 @@ namespace SmartNote
             // Handle when your app resumes
             Classes.Globals.CurrentPage = startUpPage();
         }
-
         private void init()
         {
             Classes.Globals.MainPage = (ContentPage)MainPage;

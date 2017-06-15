@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{8998C30F-D543-45E0-A0E9-23C5018930B6}</ProjectGuid>
+    <ProjectGuid>{10B4C96E-0B24-456E-B476-EB97C3CBD622}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
     <RootNamespace>SmartNote.iOS</RootNamespace>
@@ -135,7 +135,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SmartNote\SmartNote.csproj">
-      <Project>{25be032b-db0d-43d3-9e52-7b069ed517e7}</Project>
+      <Project>{4a75cf13-e90f-41f9-96a9-95b1aa9bfda0}</Project>
       <Name>SmartNote</Name>
     </ProjectReference>
   </ItemGroup>

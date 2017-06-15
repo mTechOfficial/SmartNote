@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{CDA168F0-EA94-4C5C-BF94-B0CDAEB4F71E}</ProjectGuid>
+    <ProjectGuid>{50A16C10-86D0-48EB-97B9-893629FCEECB}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SmartNote.UWP</RootNamespace>
@@ -153,7 +153,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SmartNote\SmartNote.csproj">
-      <Project>{25be032b-db0d-43d3-9e52-7b069ed517e7}</Project>
+      <Project>{4a75cf13-e90f-41f9-96a9-95b1aa9bfda0}</Project>
       <Name>SmartNote</Name>
     </ProjectReference>
   </ItemGroup>

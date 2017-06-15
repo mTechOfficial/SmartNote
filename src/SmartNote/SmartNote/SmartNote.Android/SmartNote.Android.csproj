@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E0CF3467-1B31-46F9-9B24-0ACF79149516}</ProjectGuid>
+    <ProjectGuid>{94124335-AB37-46EF-954D-C0E17918F6D0}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -56,9 +56,7 @@
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.ObjectModel">
-      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ObjectModel.dll</HintPath>
-    </Reference>
+    <Reference Include="System.ObjectModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="Xamarin.Android.Support.Animated.Vector.Drawable, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -148,7 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SmartNote\SmartNote.csproj">
-      <Project>{25be032b-db0d-43d3-9e52-7b069ed517e7}</Project>
+      <Project>{4a75cf13-e90f-41f9-96a9-95b1aa9bfda0}</Project>
       <Name>SmartNote</Name>
     </ProjectReference>
   </ItemGroup>
