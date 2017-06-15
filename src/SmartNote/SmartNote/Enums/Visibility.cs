@@ -7,7 +7,7 @@
 
 namespace SmartNote.Enums
 {
-    enum Visibility
+    public enum Visibility
     {
         Private,
         Public,

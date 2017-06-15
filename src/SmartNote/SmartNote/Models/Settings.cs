@@ -7,7 +7,7 @@
 
 namespace SmartNote.Models
 {
-    class Settings
+    public class Settings
     {
         // Member fields
         private bool enableNotifications;

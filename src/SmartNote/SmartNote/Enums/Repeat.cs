@@ -6,7 +6,7 @@
 */
 namespace SmartNote.Enums
 {
-    enum Repeat
+    public enum Repeat
     {
         Daily,
         Weekly,

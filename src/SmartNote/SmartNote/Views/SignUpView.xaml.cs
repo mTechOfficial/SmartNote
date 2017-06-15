@@ -1,31 +1,22 @@
-﻿/*
-						  SignUpView.xaml.cs
-						    Irteza Syed
-						    06/15/2017
-This is the corresponding C# code for the Sign Up Page.
-Last Edited: Irteza Syed, 06/15/2017
-*/
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace SmartNote.Views
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class SignUpView : ContentView
 	{
 		public SignUpView ()
 		{
 			InitializeComponent ();
             init();
-		}
+        }
 
-        private void init ()
+        private void init()
         {
             // Positions
             Classes.Globals.setPosition(logo, 58, 81);
@@ -51,7 +42,7 @@ namespace SmartNote.Views
 
         private void toggleAgree_Toggled(object sender, ToggledEventArgs e)
         {
-            
+
         }
 
         private void cancel_Tapped(object sender, EventArgs e)

@@ -1,7 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SmartNote.Views.SignUpView">
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SmartNote.Views.SignUpView">
   <ContentView.Content>
         <Grid BackgroundColor="#474747">
             <Label Text="SmartNote" FontSize="50" FontAttributes="Bold" 
@@ -23,7 +21,7 @@
                    HorizontalOptions="Start" VerticalOptions="Start"
                    BackgroundColor="White" x:Name="username">
                 </Entry>
-                
+
                 <Entry FontSize="20"
                    FontFamily="Segoe UI" Placeholder="Password"
                    TextColor="Black"
@@ -41,7 +39,7 @@
 
             <Switch x:Name="toggleAgree" HorizontalOptions="Start" VerticalOptions="Start"
                     Toggled="toggleAgree_Toggled">
-                
+
             </Switch>
 
             <Label Text="I agree to the" TextColor="#95989A"
@@ -61,7 +59,7 @@
                     FontFamily="Segoe UI" TextColor="White"
                     HorizontalOptions="Start" VerticalOptions="Start"
                     x:Name="registerBtn" Clicked="registerBtn_Clicked"/>
-            
+
 
         </Grid>
     </ContentView.Content>

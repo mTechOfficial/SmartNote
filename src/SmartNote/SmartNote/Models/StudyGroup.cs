@@ -8,7 +8,7 @@ using SmartNote.Enums;
 
 namespace SmartNote.Models
 {
-    class StudyGroup : Group
+    public class StudyGroup : Group
     {
         // Member fields
         private User organizer;

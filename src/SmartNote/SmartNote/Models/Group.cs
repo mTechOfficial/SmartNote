@@ -9,7 +9,7 @@ using SmartNote.Enums;
 
 namespace SmartNote.Models
 {
-    abstract class Group
+    public class Group
     {
         // Member fields
         private string name;

@@ -9,7 +9,7 @@ using Xamarin.Forms;
 
 namespace SmartNote.Models
 {
-    class ClassGroup : Group
+    public class ClassGroup : Group
     {
         // Member fields
         private List<Image> pictures; // Todo: find best type for importing images from aws cloud
