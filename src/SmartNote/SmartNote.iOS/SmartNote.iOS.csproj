@@ -136,7 +136,7 @@
       <HintPath>..\..\packages\AWSSDK.SecurityToken.3.3.1.9\lib\Xamarin.iOS10\AWSSDK.SecurityToken.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data.CF">
-      <HintPath>..\..\..\..\..\Downloads\lib\ios\MySql.Data.CF.dll</HintPath>
+      <HintPath>C:\Users\Muhand\Desktop\MySQL-Plugin-1.0\MySQL-Plugin-1.0\lib\ios\MySql.Data.CF.dll</HintPath>
     </Reference>
     <Reference Include="PCLCrypto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d4421c8a4786956c, processorArchitecture=MSIL">
       <HintPath>..\..\packages\PCLCrypto.1.0.2.15130\lib\Xamarin.iOS\PCLCrypto.dll</HintPath>

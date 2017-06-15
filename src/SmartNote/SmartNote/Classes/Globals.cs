@@ -8,7 +8,7 @@
 */
 using Xamarin.Forms;
 using SmartNote.Models;
-
+//using System.Net.Http;
 namespace SmartNote.Classes
 {
     class Globals
@@ -27,6 +27,7 @@ namespace SmartNote.Classes
         private static User currentUser;
         private static int screenWidth;
         private static int screenHeight;
+        //private static readonly HTTPClient
 
         // public static properties
         public static ContentView Dashboard

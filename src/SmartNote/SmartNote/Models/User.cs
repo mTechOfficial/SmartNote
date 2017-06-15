@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace SmartNote.Models
 {
-    class User
+    public class User
     {
         // Member fields
         private int id;
