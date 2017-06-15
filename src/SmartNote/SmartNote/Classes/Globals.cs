@@ -3,12 +3,12 @@
 						  Zhi Qiu
 						 04/10/2017
  Class object holding globally shared data.
- Revised by: Muhand Jumah
- Revised on: 4/14/2017
+ Revised by: Irteza Syed
+ Revised on: 06/15/2017
 */
 using Xamarin.Forms;
 using SmartNote.Models;
-//using System.Net.Http;
+
 namespace SmartNote.Classes
 {
     class Globals
@@ -27,7 +27,8 @@ namespace SmartNote.Classes
         private static User currentUser;
         private static int screenWidth;
         private static int screenHeight;
-        //private static readonly HTTPClient
+        private static int designWidth = 375;
+        private static int designHeight = 667;
 
         // public static properties
         public static ContentView Dashboard
@@ -74,7 +75,7 @@ namespace SmartNote.Classes
             get { return currentUser; }
             set { currentUser = value; }
         }
-        
+
         public static ContentView LoginPage
         {
             get { return loginPage; }
@@ -101,6 +102,31 @@ namespace SmartNote.Classes
         {
             get { return screenHeight; }
             set { screenHeight = value; }
+        }
+
+        public static int DesignWidth
+        {
+            get { return designWidth; }
+        }
+        public static int DesignHeight
+        {
+            get { return designHeight; }
+        }
+
+        public static void setPosition(View controller, float x, float y)
+        {
+            controller.Margin = new Thickness(calcWidthMargin(x),
+                calcHeightMargin(y), 0, 0);
+        }
+
+        public static float calcWidthMargin(float x)
+        {
+            return (x / (float)designWidth * screenWidth);
+        }
+
+        public static float calcHeightMargin(float y)
+        {
+            return (y / (float)designHeight * screenHeight);
         }
     }
 }

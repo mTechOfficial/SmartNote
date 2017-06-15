@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SmartNote.Views.Login2">
-  <ContentView.Content>
+    <ContentView.Content>
         <Grid BackgroundColor="#474747">
             <Label Text="SmartNote" FontSize="50" FontAttributes="Bold" 
                    FontFamily="Arial Rounded MT" TextColor="#95989A"
@@ -40,7 +40,7 @@
                      VerticalOptions="Start" x:Name="rightLine"/>
 
             <!--<StackLayout Orientation="Horizontal" x:Name="facebookBtn" Spacing="0">-->
-                <!--<BoxView BackgroundColor="#334E88" HorizontalOptions="Start" VerticalOptions="Start"
+            <!--<BoxView BackgroundColor="#334E88" HorizontalOptions="Start" VerticalOptions="Start"
                          x:Name="facebookIcon"/>-->
 
             <Button BackgroundColor="#334E88" Text="f"
@@ -77,14 +77,18 @@
                    HorizontalOptions="Start" VerticalOptions="Start"
                    x:Name="newHere"/>
             <Label Text=" Sign Up" FontSize="15" FontAttributes="Bold" 
-                   FontFamily="Segoe UI" TextColor="White"
+                   FontFamily="Segoe UI" TextColor="White" BackgroundColor="#474747"
                    HorizontalOptions="Start" VerticalOptions="Start"
-                   x:Name="signup"/>
-            
+                   x:Name="signup">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="signup_Tapped" NumberOfTapsRequired="1"/>
+                </Label.GestureRecognizers>
+            </Label>
+
             <Label Text="Product of mTech Inc." TextColor="White"
                    FontSize="12" FontFamily="Segoe UI"
                    x:Name="copyright" HorizontalOptions="Start" VerticalOptions="Start"/>
 
         </Grid>
-  </ContentView.Content>
+    </ContentView.Content>
 </ContentView>
