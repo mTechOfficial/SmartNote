@@ -38,12 +38,17 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Constants.cs" />
     <Compile Include="Classes\Globals.cs" />
     <Compile Include="Controllers\CodeGenerator.cs" />
     <Compile Include="Controllers\DatabaseManager.cs" />
+    <Compile Include="Controllers\IRestService.cs" />
     <Compile Include="Controllers\RestService.cs" />
+    <Compile Include="Enums\Login.cs" />
+    <Compile Include="Enums\Register.cs" />
     <Compile Include="Enums\Repeat.cs" />
     <Compile Include="Enums\Visibility.cs" />
+    <Compile Include="JResponse\Login.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -86,6 +91,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.2\lib\portable-net45+win8+wpa81+wp8\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Net.Http">
       <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\System.Net.Http.dll</HintPath>
     </Reference>

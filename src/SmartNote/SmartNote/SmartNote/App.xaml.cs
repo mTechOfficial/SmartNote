@@ -9,10 +9,12 @@ namespace SmartNote
 {
     public partial class App : Application
     {
+        public static Controllers.DatabaseManager DBManager { get; private set; }
+
         public App()
         {
             InitializeComponent();
-
+            DBManager = new Controllers.DatabaseManager(new Controllers.RestService());
             MainPage = new SmartNote.MainPage();
         }
 

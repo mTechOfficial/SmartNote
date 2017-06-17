@@ -14,7 +14,7 @@
                    BackgroundColor="White" x:Name="username">
 
                 </Entry>
-                <Entry FontSize="20"
+                <Entry FontSize="20" IsPassword="True"
                    FontFamily="Segoe UI" Placeholder="Password"
                    TextColor="Black"
                    HorizontalOptions="Start" VerticalOptions="Start"
@@ -26,7 +26,7 @@
                     FontSize="16"
                     FontFamily="Segoe UI" TextColor="White"
                     HorizontalOptions="Start" VerticalOptions="Start"
-                    x:Name="mtechLoginBtn"/>
+                    x:Name="mtechLoginBtn" Clicked="mtechLoginBtn_Clicked"/>
 
             <BoxView HeightRequest="1" BackgroundColor="#95989A" HorizontalOptions="Start"
                      VerticalOptions="Start" x:Name="leftLine"/>

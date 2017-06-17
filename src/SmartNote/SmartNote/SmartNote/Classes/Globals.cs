@@ -4,7 +4,7 @@
 						 04/10/2017
  Class object holding globally shared data.
  Revised by: Muhand Jumah
- Revised on: 4/14/2017
+ Revised on: 4/14/2017, 6/17/2017
 */
 
 using SmartNote.Models;
@@ -28,6 +28,7 @@ namespace SmartNote.Classes
         private static User currentUser;
         private static int screenWidth;
         private static int screenHeight;
+
         /// <summary>
         /// Why is the height 667 and width 375? why is it fixed?
         /// </summary>

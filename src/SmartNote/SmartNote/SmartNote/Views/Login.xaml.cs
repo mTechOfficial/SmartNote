@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SmartNote.Classes;
+using System;
 
 using Xamarin.Forms;
 
@@ -89,6 +86,25 @@ namespace SmartNote.Views
         {
             Classes.Globals.RegisterPage = new Views.SignUpView();
             Classes.Globals.CurrentPage = Classes.Globals.RegisterPage;
+        }
+
+        private async void mtechLoginBtn_Clicked(object sender, EventArgs e)
+        {
+            Models.User user = new Models.User();
+            user.Email = username.Text;
+            switch (await App.DBManager.Login(user, password.Text))
+            {
+                case Enums.Login.Success:
+                    Globals.CurrentUser = user;
+                    Globals.CurrentPage = new Views.Dashboard();
+                    break;
+                case Enums.Login.InvalidUsernamePassword:
+                    break;
+                case Enums.Login.UnknownError:
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
