@@ -17,6 +17,7 @@ namespace SmartNote.Classes
         public const string SERVER_URL = "http://10.0.2.2/SmartNoteServer/api/";
 
         //Extension URL to the login page
-        public const string LOGIN_EXT = "login.php?email={0}&password={1}";
+        //public const string LOGIN_EXT = "login.php?email={0}&password={1}";
+        public const string LOGIN_EXT = "login.php";
     }
 }

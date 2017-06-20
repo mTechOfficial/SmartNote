@@ -14,6 +14,7 @@ using System.Net.Http.Headers;
 using Newtonsoft.Json;
 using System.Diagnostics;
 using SmartNote.Classes;
+using System.Collections.Generic;
 
 namespace SmartNote.Controllers
 {
@@ -47,12 +48,17 @@ namespace SmartNote.Controllers
             Enums.Login res = Login.UnknownError;                                       //Create a result enum object
 
             //Create the URL
-            var uri = new Uri(string.Format(Constants.SERVER_URL + Constants.LOGIN_EXT, user.Email, pw));
+            var uri = new Uri(string.Format(Constants.SERVER_URL + Constants.LOGIN_EXT));
 
             //Try to get results back
             try
             {
-                var response = await client.GetAsync(uri);                              //Try to send the request
+                var httpContent = new FormUrlEncodedContent(new[]
+                {
+                    new KeyValuePair<string, string>("email", user.Email),
+                    new KeyValuePair<string, string>("password", pw)
+                });
+                var response = await client.PostAsync(uri, httpContent);                              //Try to send the request
 
                 //Check if request sent back success code
                 if (response.IsSuccessStatusCode)
