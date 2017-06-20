@@ -12,6 +12,6 @@ namespace SmartNote.Controllers
     public interface IRestService
     {
         Task<Enums.Login> LoginUserAsync(Models.User user, string pw);
-        Task<Enums.Register> RegisterUserAsync(Models.User user);
+        Task<Enums.Register> RegisterUserAsync(Models.User user, string pw);
     }
 }

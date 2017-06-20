@@ -19,5 +19,8 @@ namespace SmartNote.Classes
         //Extension URL to the login page
         //public const string LOGIN_EXT = "login.php?email={0}&password={1}";
         public const string LOGIN_EXT = "login.php";
+
+        //Extension URL to the register page
+        public const string REGISTER_EXT = "register.php";
     }
 }

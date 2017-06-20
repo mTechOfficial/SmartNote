@@ -50,9 +50,24 @@ namespace SmartNote.Views
             Classes.Globals.CurrentPage = Classes.Globals.LoginPage;
         }
 
-        private void registerBtn_Clicked(object sender, EventArgs e)
+        private async void registerBtn_Clicked(object sender, EventArgs e)
         {
-            Classes.Globals.CurrentPage = Classes.Globals.LoginPage;
+            Models.User user = new Models.User();
+            user.Email = username.Text;
+
+            switch (await App.DBManager.Register(user, password.Text))
+            {
+                case Enums.Register.Successful:
+                    System.Diagnostics.Debug.WriteLine("[Debug] 4");
+                    Classes.Globals.CurrentPage = Classes.Globals.LoginPage;
+                    break;
+                case Enums.Register.UserExists:
+                    break;
+                case Enums.Register.UnknownError:
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

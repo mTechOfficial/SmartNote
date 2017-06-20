@@ -40,9 +40,9 @@ namespace SmartNote.Controllers
         /// </summary>
         /// <param name="user">A new user to register</param>
         /// <returns>Enum.Register</returns>
-        public Task<Enums.Register> Register(User user)
+        public Task<Enums.Register> Register(User user, string pw)
         {
-            return restService.RegisterUserAsync(user);
+            return restService.RegisterUserAsync(user, pw);
         }
 
     }

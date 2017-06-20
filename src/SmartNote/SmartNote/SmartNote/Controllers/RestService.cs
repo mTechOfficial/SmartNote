@@ -70,7 +70,8 @@ namespace SmartNote.Controllers
                     //Check if logged in was successful
                     if (temp.error == 0 && temp.success == 1)
                         res = Login.Success;                                            //Set res to be success
-
+                    else if (temp.error == 1 && temp.success == 0)
+                        res = Login.InvalidUsernamePassword;
                 }
             }
             catch (Exception ex)
@@ -88,9 +89,35 @@ namespace SmartNote.Controllers
         /// </summary>
         /// <param name="user"></param>
         /// <returns></returns>
-        public async Task<Enums.Register> RegisterUserAsync(User user)
+        public async Task<Enums.Register> RegisterUserAsync(User user, string pw)
         {
-            throw new NotImplementedException();
+            JResponse.Register temp = new JResponse.Register();
+            Enums.Register res = Register.UnknownError;
+
+            var uri = new Uri(string.Format(Constants.SERVER_URL + Constants.REGISTER_EXT));
+
+            try
+            {
+                var httpContent = new FormUrlEncodedContent(new[]
+                {
+                    new KeyValuePair<string, string>("email", user.Email),
+                    new KeyValuePair<string, string>("password", pw)
+                });
+                var response = await client.PostAsync(uri, httpContent);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    temp = JsonConvert.DeserializeObject<JResponse.Register>(content);
+                    res = temp.result; // Look at Enum.Register for result values
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"ERROR {ex.Message}");
+            }
+
+            return res;
         }
     }
 }

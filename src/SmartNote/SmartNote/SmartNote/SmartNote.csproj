@@ -49,6 +49,7 @@
     <Compile Include="Enums\Repeat.cs" />
     <Compile Include="Enums\Visibility.cs" />
     <Compile Include="JResponse\Login.cs" />
+    <Compile Include="JResponse\Register.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
