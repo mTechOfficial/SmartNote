@@ -119,10 +119,15 @@ namespace SmartNote.Classes
             get { return designHeight; }
         }
 
-        public static void setPosition(View controller, float x, float y)
+        public static void setPosition(View controller, float x, float y, float width = 0.0f, float height = 0.0f)
         {
             controller.Margin = new Thickness(calcWidthMargin(x),
                 calcHeightMargin(y), 0, 0);
+
+            if(width != 0.0f)
+                controller.WidthRequest = calcWidthMargin(width);
+            if (height != 0.0f)
+                controller.HeightRequest = calcHeightMargin(height);
         }
 
         public static float calcWidthMargin(float x)
