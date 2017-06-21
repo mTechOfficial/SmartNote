@@ -1,30 +1,70 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SmartNote.Views.Dashboard">
-  <ContentView.Content>
-        <Grid BackgroundColor="#FFFFFF" >
-            <Grid.RowDefinitions>
-                <RowDefinition Height=".90*"/>
-                <RowDefinition Height=".10*"/>
-            </Grid.RowDefinitions>
 
-            <!--This is content view-->
-            <Grid Grid.Row="0" BackgroundColor="#FFFFFF"/>
-            
-            <!--This is tabbed bar-->
-            <Grid Grid.Row="1" BackgroundColor="#FF0000">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <Style x:Key="homeButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#17BF5A"/>
+                <Setter Property="TextColor" Value="#474747" />
+                <Setter Property="BorderColor" Value="#FFFFFF" />
+                <Setter Property="BorderRadius" Value="30"/>
+                <Setter Property="BorderWidth" Value="2"/>
+                <Setter Property="FontSize" Value="14.5" />
+                <Setter Property="FontFamily" Value="Segoe UI" />
+                <Setter Property="FontAttributes" Value="None" />
+                <Setter Property="VerticalOptions"  Value="Start"/>
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+                <Setter Property="HeightRequest" Value="68.933333"/>
+            </Style>
+            <Style x:Key="nonHomeButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#FFFFFF"/>
+                <Setter Property="TextColor" Value="#474747" />
+                <Setter Property="BorderColor" Value="#95989A" />
+                <Setter Property="BorderRadius" Value="0"/>
+                <Setter Property="BorderWidth" Value="1"/>
+                <Setter Property="FontSize" Value="7.5" />
+                <Setter Property="FontFamily" Value="Segoe UI" />
+                <Setter Property="FontAttributes" Value="None" />
+                <Setter Property="VerticalOptions"  Value="End"/>
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+                <Setter Property="HeightRequest" Value="52.933333"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentView.Resources>
+    <ContentView.Content>
+        <Grid RowSpacing="1" ColumnSpacing="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="68.933333"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Frame Grid.Row="0" Grid.Column="0">
+
+            </Frame>
+
+            <Grid Grid.Row="1" Grid.Column="0" RowSpacing="0" ColumnSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.20*"/>
-                    <ColumnDefinition Width="0.20*"/>
-                    <ColumnDefinition Width="0.20*"/>
-                    <ColumnDefinition Width="0.20*"/>
-                    <ColumnDefinition Width="0.20*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Grid Grid.Column="0"  HeightRequest="48" BackgroundColor="#FFFFFF"/>
-                <Grid Grid.Column="1" HeightRequest="48" BackgroundColor="#FFFFFF"/>
-                <Grid Grid.Column="2"  BackgroundColor="#17BF5A"/>
-                <Grid Grid.Column="3" HeightRequest="48" BackgroundColor="#FFFFFF"/>
-                <Grid Grid.Column="4"  HeightRequest="48" BackgroundColor="#FFFFFF"/>
+
+                <Button Text="Personal" Grid.Row="0" Grid.Column="0" Style="{StaticResource nonHomeButton}"/>
+                <Button Text="Shared" Grid.Row="0" Grid.Column="1" Style="{StaticResource nonHomeButton}"/>
+                <Button Text="Home" Grid.Row="0" Grid.Column="2" Style="{StaticResource homeButton}"/>
+                <Button Text="Group Study" Grid.Row="0" Grid.Column="3" Style="{StaticResource nonHomeButton}"/>
+                <Button Text="Settings" Grid.Row="0" Grid.Column="4" Style="{StaticResource nonHomeButton}"/>
             </Grid>
+            
         </Grid>
+
     </ContentView.Content>
 </ContentView>
