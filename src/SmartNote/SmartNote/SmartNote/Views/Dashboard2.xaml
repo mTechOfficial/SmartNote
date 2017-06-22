@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartNote.Views.Dashboard2">
+    
+    <ContentPage Title="Personal" />
+    <ContentPage Title="Shared" />
+    <ContentPage Title="Home">
+        <StackLayout Padding="5, 20">
+            <BoxView BackgroundColor="Red"
+                     HorizontalOptions="Center"
+                     WidthRequest="224" HeightRequest="224"/>
+            <Label Text="Muhand Jumah"
+                   HorizontalOptions="Center"
+                   FontSize="Medium" />
+            <Label Text="Active Classes"
+                   FontFamily="Arial Rounded MT"
+                   FontSize="Medium"
+                   FontAttributes="Bold" />
+            <ListView x:Name="listView" ItemTapped="listView_ItemTapped"/>
+            <Button BackgroundColor="#17bf5a"
+                    Text="Quick Note"
+                    FontSize="Medium"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    WidthRequest="332" HeightRequest="49" />
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Group Study" />
+    <ContentPage Title="Settings" />
+    
+</TabbedPage>

@@ -96,7 +96,8 @@ namespace SmartNote.Views
             {
                 case Enums.Login.Success:
                     Globals.CurrentUser = user;
-                    Globals.CurrentPage = new Views.Dashboard();
+                    //Globals.CurrentPage = new Views.Dashboard();
+                    Application.Current.MainPage = new Views.Dashboard2();
                     break;
                 case Enums.Login.InvalidUsernamePassword:
                     break;

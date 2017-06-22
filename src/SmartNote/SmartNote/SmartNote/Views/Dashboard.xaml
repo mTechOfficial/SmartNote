@@ -63,7 +63,6 @@
                 <Button Text="Group Study" Grid.Row="0" Grid.Column="3" Style="{StaticResource nonHomeButton}"/>
                 <Button Text="Settings" Grid.Row="0" Grid.Column="4" Style="{StaticResource nonHomeButton}"/>
             </Grid>
-            
         </Grid>
 
     </ContentView.Content>
