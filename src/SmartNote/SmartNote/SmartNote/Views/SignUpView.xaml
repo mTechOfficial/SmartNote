@@ -26,14 +26,14 @@
                    FontFamily="Segoe UI" Placeholder="Password"
                    TextColor="Black"
                    HorizontalOptions="Start" VerticalOptions="Start"
-                   BackgroundColor="White" x:Name="password">
+                   BackgroundColor="White" x:Name="password" IsPassword="True">
                 </Entry>
 
                 <Entry FontSize="20"
                    FontFamily="Segoe UI" Placeholder="Confirm Password"
                    TextColor="Black"
                    HorizontalOptions="Start" VerticalOptions="Start"
-                   BackgroundColor="White" x:Name="confirmPassword">
+                   BackgroundColor="White" x:Name="confirmPassword" IsPassword="True">
                 </Entry>
             </StackLayout>
 
