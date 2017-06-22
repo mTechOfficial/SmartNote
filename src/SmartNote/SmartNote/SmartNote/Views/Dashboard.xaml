@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SmartNote.Views.Dashboard">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SmartNote.Views.Dashboard">
 
-    <ContentView.Resources>
+    <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="homeButton" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="#17BF5A"/>
@@ -30,7 +30,7 @@
                 <Setter Property="HeightRequest" Value="52.933333"/>
             </Style>
         </ResourceDictionary>
-    </ContentView.Resources>
+    </ContentPage.Resources>
     <ContentView.Content>
         <Grid RowSpacing="1" ColumnSpacing="1">
             <Grid.RowDefinitions>
@@ -66,4 +66,4 @@
         </Grid>
 
     </ContentView.Content>
-</ContentView>
+</ContentPage>

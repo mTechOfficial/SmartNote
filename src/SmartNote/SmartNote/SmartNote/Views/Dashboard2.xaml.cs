@@ -27,6 +27,7 @@ namespace SmartNote.Views
 
         private void listView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
+            Classes.Globals.CurrentPage = Classes.Globals.LoginPage;
         }
     }
 }

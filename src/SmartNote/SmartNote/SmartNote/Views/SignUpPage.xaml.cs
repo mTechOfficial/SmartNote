@@ -8,9 +8,9 @@ using Xamarin.Forms;
 
 namespace SmartNote.Views
 {
-    public partial class SignUpView : ContentView
+    public partial class SignUpPage : ContentPage
     {
-        public SignUpView()
+        public SignUpPage()
         {
             InitializeComponent();
             init();
@@ -58,7 +58,6 @@ namespace SmartNote.Views
             switch (await App.DBManager.Register(user, password.Text))
             {
                 case Enums.Register.Successful:
-                    System.Diagnostics.Debug.WriteLine("[Debug] 4");
                     Classes.Globals.CurrentPage = Classes.Globals.LoginPage;
                     break;
                 case Enums.Register.UserExists:

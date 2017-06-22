@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace SmartNote.Views
 {
-    public partial class Login : ContentView
+    public partial class Login : ContentPage
     {
         public Login()
         {
@@ -52,6 +52,8 @@ namespace SmartNote.Views
             //gmailIcon.HeightRequest = calculateMargin(0.0869565217391304f, Classes.Globals.ScreenHeight);
             //gmailLoginBtn.HeightRequest = calculateMargin(0.0869565217391304f, Classes.Globals.ScreenHeight);
 
+            // Remove navigation bar
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         /// <summary>
@@ -82,10 +84,11 @@ namespace SmartNote.Views
             //Classes.Globals.CurrentPage = new Views.Login();
         }
 
-        private void signup_Tapped(object sender, EventArgs e)
+        private async void signup_Tapped(object sender, EventArgs e)
         {
-            Classes.Globals.RegisterPage = new Views.SignUpView();
-            Classes.Globals.CurrentPage = Classes.Globals.RegisterPage;
+            Classes.Globals.RegisterPage = new Views.SignUpPage() { Title = "Registration" };
+            //Classes.Globals.CurrentPage = Classes.Globals.RegisterPage;
+            await Navigation.PushAsync(Classes.Globals.RegisterPage);
         }
 
         private async void mtechLoginBtn_Clicked(object sender, EventArgs e)

@@ -40,11 +40,11 @@ namespace SmartNote
         {
             Classes.Globals.MainPage = (ContentPage)MainPage;
             Classes.Globals.Dashboard = new Views.Dashboard();
-            Classes.Globals.LoginPage = new Views.Login();
+            Classes.Globals.LoginPage = new NavigationPage(new Views.Login()) { BarBackgroundColor = Color.FromHex("474747") };
             Classes.Globals.CurrentPage = startUpPage();
         }
 
-        private ContentView startUpPage()
+        private Page startUpPage()
         {
             var result = Classes.Globals.LoginPage;
 

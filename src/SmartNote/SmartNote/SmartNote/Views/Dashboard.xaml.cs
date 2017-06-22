@@ -9,7 +9,7 @@ using Xamarin.Forms;
 
 namespace SmartNote.Views
 {
-    public partial class Dashboard : ContentView
+    public partial class Dashboard : ContentPage
     {
         public Dashboard()
         {

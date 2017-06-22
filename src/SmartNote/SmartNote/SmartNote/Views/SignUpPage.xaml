@@ -1,66 +1,64 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SmartNote.Views.SignUpView">
-  <ContentView.Content>
-        <Grid BackgroundColor="#474747">
-            <Label Text="SmartNote" FontSize="50" FontAttributes="Bold" 
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SmartNote.Views.SignUpPage">
+    <Grid BackgroundColor="#474747">
+        <Label Text="SmartNote" FontSize="50" FontAttributes="Bold" 
                    FontFamily="Arial Rounded MT" TextColor="#95989A"
                    x:Name="logo"/>
 
-            <Label Text="Cancel" FontSize="16" FontAttributes="Bold" 
+        <Label Text="Cancel" FontSize="16" FontAttributes="Bold" 
                    FontFamily="Arial Rounded MT" TextColor="#95989A"
                    x:Name="cancel">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="cancel_Tapped" />
-                </Label.GestureRecognizers>
-            </Label>
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="cancel_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
 
-            <StackLayout x:Name="signUpContainer" Spacing="0">
-                <Entry FontSize="20"
+        <StackLayout x:Name="signUpContainer" Spacing="0">
+            <Entry FontSize="20"
                    FontFamily="Segoe UI" Placeholder="E-mail address"
                    TextColor="Black"
                    HorizontalOptions="Start" VerticalOptions="Start"
                    BackgroundColor="White" x:Name="username">
-                </Entry>
+            </Entry>
 
-                <Entry FontSize="20"
+            <Entry FontSize="20"
                    FontFamily="Segoe UI" Placeholder="Password"
                    TextColor="Black"
                    HorizontalOptions="Start" VerticalOptions="Start"
                    BackgroundColor="White" x:Name="password" IsPassword="True">
-                </Entry>
+            </Entry>
 
-                <Entry FontSize="20"
+            <Entry FontSize="20"
                    FontFamily="Segoe UI" Placeholder="Confirm Password"
                    TextColor="Black"
                    HorizontalOptions="Start" VerticalOptions="Start"
                    BackgroundColor="White" x:Name="confirmPassword" IsPassword="True">
-                </Entry>
-            </StackLayout>
+            </Entry>
+        </StackLayout>
 
-            <Switch x:Name="toggleAgree" HorizontalOptions="Start" VerticalOptions="Start"
+        <Switch x:Name="toggleAgree" HorizontalOptions="Start" VerticalOptions="Start"
                     Toggled="toggleAgree_Toggled">
 
-            </Switch>
+        </Switch>
 
-            <Label Text="I agree to the" TextColor="#95989A"
+        <Label Text="I agree to the" TextColor="#95989A"
                    FontSize="12" FontFamily="Segoe UI"
                    x:Name="agree" HorizontalOptions="Start" VerticalOptions="Start"/>
 
-            <Label Text="Terms and Conditions" TextColor="White"
+        <Label Text="Terms and Conditions" TextColor="White"
                    FontSize="12" FontFamily="Segoe UI"
                    x:Name="terms" HorizontalOptions="Start" VerticalOptions="Start">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="terms_Tapped"/>
-                </Label.GestureRecognizers>
-            </Label>
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="terms_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
 
-            <Button Text="Register" BackgroundColor="#17BF5A"
+        <Button Text="Register" BackgroundColor="#17BF5A"
                     FontSize="16"
                     FontFamily="Segoe UI" TextColor="White"
                     HorizontalOptions="Start" VerticalOptions="Start"
                     x:Name="registerBtn" Clicked="registerBtn_Clicked"/>
 
 
-        </Grid>
-    </ContentView.Content>
-</ContentView>
+    </Grid>
+</ContentPage>

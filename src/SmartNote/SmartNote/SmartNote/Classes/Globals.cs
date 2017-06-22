@@ -15,16 +15,16 @@ namespace SmartNote.Classes
     public class Globals
     {
         // static fields
-        private static ContentView loginPage;
-        private static ContentView registerPage;
-        private static ContentView dashboard;
-        private static ContentView publicClasses;
-        private static ContentView privateClasses;
-        private static ContentView groupStudy;
-        private static ContentView settings;
-        private static ContentView currentPage;
-        private static ContentView profilePage;
-        private static ContentPage mainPage;
+        private static Page loginPage;
+        private static ContentPage registerPage;
+        private static ContentPage dashboard;
+        private static ContentPage publicClasses;
+        private static ContentPage privateClasses;
+        private static ContentPage groupStudy;
+        private static ContentPage settings;
+        private static Page currentPage;
+        private static ContentPage profilePage;
+        private static Page mainPage;
         private static User currentUser;
         private static int screenWidth;
         private static int screenHeight;
@@ -37,41 +37,41 @@ namespace SmartNote.Classes
         //private static readonly HTTPClient
 
         // public static properties
-        public static ContentView Dashboard
+        public static ContentPage Dashboard
         {
             get { return dashboard; }
             set { dashboard = value; }
         }
-        public static ContentView PublicClasses
+        public static ContentPage PublicClasses
         {
             get { return publicClasses; }
             set { publicClasses = value; }
         }
-        public static ContentView PrivateClasses
+        public static ContentPage PrivateClasses
         {
             get { return privateClasses; }
             set { privateClasses = value; }
         }
-        public static ContentView GroupStudy
+        public static ContentPage GroupStudy
         {
             get { return groupStudy; }
             set { groupStudy = value; }
         }
-        public static ContentView Settings
+        public static ContentPage Settings
         {
             get { return settings; }
             set { settings = value; }
         }
-        public static ContentView CurrentPage
+        public static Page CurrentPage
         {
             get { return currentPage; }
             set
             {
                 currentPage = value;
-                mainPage.Content = currentPage;
+                MainPage = currentPage;
             }
         }
-        public static ContentView ProfilePage
+        public static ContentPage ProfilePage
         {
             get { return profilePage; }
             set { profilePage = value; }
@@ -82,22 +82,26 @@ namespace SmartNote.Classes
             set { currentUser = value; }
         }
 
-        public static ContentView LoginPage
+        public static Page LoginPage
         {
             get { return loginPage; }
             set { loginPage = value; }
         }
 
-        public static ContentView RegisterPage
+        public static ContentPage RegisterPage
         {
             get { return registerPage; }
             set { registerPage = value; }
         }
 
-        public static ContentPage MainPage
+        public static Page MainPage
         {
             get { return mainPage; }
-            set { mainPage = value; }
+            set
+            {
+                mainPage = value;
+                Application.Current.MainPage = mainPage;
+            }
         }
         public static int ScreenWidth
         {
