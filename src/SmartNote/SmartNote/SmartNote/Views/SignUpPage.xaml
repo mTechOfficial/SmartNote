@@ -1,19 +1,20 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SmartNote.Views.SignUpPage">
-    <Grid BackgroundColor="#474747">
+    <StackLayout BackgroundColor="#474747">
         <Label Text="SmartNote" FontSize="50" FontAttributes="Bold" 
-                   FontFamily="Arial Rounded MT" TextColor="#95989A"
-                   x:Name="logo"/>
+               FontFamily="Arial Rounded MT" TextColor="#95989A"
+               x:Name="logo"
+               HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
 
-        <Label Text="Cancel" FontSize="16" FontAttributes="Bold" 
+        <!--<Label Text="Cancel" FontSize="16" FontAttributes="Bold" 
                    FontFamily="Arial Rounded MT" TextColor="#95989A"
                    x:Name="cancel">
             <Label.GestureRecognizers>
                 <TapGestureRecognizer Tapped="cancel_Tapped" />
             </Label.GestureRecognizers>
-        </Label>
+        </Label>-->
 
-        <StackLayout x:Name="signUpContainer" Spacing="0">
+        <StackLayout x:Name="signUpContainer" Spacing="0" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
             <Entry FontSize="20"
                    FontFamily="Segoe UI" Placeholder="E-mail address"
                    TextColor="Black"
@@ -36,29 +37,34 @@
             </Entry>
         </StackLayout>
 
-        <Switch x:Name="toggleAgree" HorizontalOptions="Start" VerticalOptions="Start"
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="Start" VerticalOptions="Center"
+                     Spacing="0"
+                     Padding="20, 0, 0, 0">
+            <Switch x:Name="toggleAgree" HorizontalOptions="Center" VerticalOptions="Center"
                     Toggled="toggleAgree_Toggled">
 
-        </Switch>
-
-        <Label Text="I agree to the" TextColor="#95989A"
+            </Switch>
+            
+            <Label Text="I agree to the" TextColor="#95989A"
                    FontSize="12" FontFamily="Segoe UI"
-                   x:Name="agree" HorizontalOptions="Start" VerticalOptions="Start"/>
+                   x:Name="agree" HorizontalOptions="Center" VerticalOptions="Center"/>
 
-        <Label Text="Terms and Conditions" TextColor="White"
+            <Label Text="Terms and Conditions" TextColor="White"
                    FontSize="12" FontFamily="Segoe UI"
-                   x:Name="terms" HorizontalOptions="Start" VerticalOptions="Start">
-            <Label.GestureRecognizers>
-                <TapGestureRecognizer Tapped="terms_Tapped"/>
-            </Label.GestureRecognizers>
-        </Label>
+                   x:Name="terms" HorizontalOptions="Center" VerticalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="terms_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
 
         <Button Text="Register" BackgroundColor="#17BF5A"
                     FontSize="16"
                     FontFamily="Segoe UI" TextColor="White"
-                    HorizontalOptions="Start" VerticalOptions="Start"
+                    HorizontalOptions="Center" VerticalOptions="CenterAndExpand"
                     x:Name="registerBtn" Clicked="registerBtn_Clicked"/>
 
 
-    </Grid>
+    </StackLayout>
 </ContentPage>

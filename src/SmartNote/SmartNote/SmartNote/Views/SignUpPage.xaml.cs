@@ -19,17 +19,17 @@ namespace SmartNote.Views
         private void init()
         {
             // Positions
-            Classes.Globals.setPosition(logo, 58, 81);
-            Classes.Globals.setPosition(cancel, 15, 11);
-            Classes.Globals.setPosition(signUpContainer, 26, 259.2f, 324);
-            Classes.Globals.setPosition(registerBtn, 26, 602, 324);
-            Classes.Globals.setPosition(toggleAgree, 26, 548);
-            Classes.Globals.setPosition(agree, 65, 553);
-            Classes.Globals.setPosition(terms, 137, 553);
+            //Classes.Globals.setPosition(logo, 58, 81);
+            //Classes.Globals.setPosition(cancel, 15, 11);
+            //Classes.Globals.setPosition(signUpContainer, 26, 259.2f, 324);
+            //Classes.Globals.setPosition(registerBtn, 26, 602, 324);
+            //Classes.Globals.setPosition(toggleAgree, 26, 548);
+            //Classes.Globals.setPosition(agree, 65, 553);
+            //Classes.Globals.setPosition(terms, 137, 553);
 
             //Widths
-            //signUpContainer.WidthRequest = Classes.Globals.calcWidthMargin(324);
-            //registerBtn.WidthRequest = Classes.Globals.calcWidthMargin(324);
+            signUpContainer.WidthRequest = Classes.Globals.calcWidthMargin(324);
+            registerBtn.WidthRequest = Classes.Globals.calcWidthMargin(324);
             username.WidthRequest = Classes.Globals.calcWidthMargin(324);
             password.WidthRequest = Classes.Globals.calcWidthMargin(324);
             confirmPassword.WidthRequest = Classes.Globals.calcWidthMargin(324);
