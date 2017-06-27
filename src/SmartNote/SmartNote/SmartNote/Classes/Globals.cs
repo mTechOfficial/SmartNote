@@ -17,7 +17,7 @@ namespace SmartNote.Classes
         // static fields
         private static Page loginPage;
         private static ContentPage registerPage;
-        private static ContentPage dashboard;
+        private static Page dashboard;
         private static ContentPage publicClasses;
         private static ContentPage privateClasses;
         private static ContentPage groupStudy;
@@ -37,7 +37,7 @@ namespace SmartNote.Classes
         //private static readonly HTTPClient
 
         // public static properties
-        public static ContentPage Dashboard
+        public static Page Dashboard
         {
             get { return dashboard; }
             set { dashboard = value; }

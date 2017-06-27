@@ -17,7 +17,7 @@ namespace SmartNote
             DBManager = new Controllers.DatabaseManager(new Controllers.RestService());
             MainPage = new SmartNote.MainPage();
             //FOR DEBUG ONLY
-            //Classes.Globals.CurrentUser = new Models.User();
+            Classes.Globals.CurrentUser = new Models.User();
         }
 
         protected override void OnStart()
@@ -39,7 +39,7 @@ namespace SmartNote
         private void init()
         {
             Classes.Globals.MainPage = (ContentPage)MainPage;
-            Classes.Globals.Dashboard = new Views.Dashboard();
+            Classes.Globals.Dashboard = new Views.Dashboard2();
             Classes.Globals.LoginPage = new NavigationPage(new Views.Login()) { BarBackgroundColor = Color.FromHex("474747") };
             Classes.Globals.CurrentPage = startUpPage();
         }
