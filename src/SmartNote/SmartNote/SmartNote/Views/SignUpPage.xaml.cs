@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,16 +34,25 @@ namespace SmartNote.Views
             username.WidthRequest = Classes.Globals.calcWidthMargin(324);
             password.WidthRequest = Classes.Globals.calcWidthMargin(324);
             confirmPassword.WidthRequest = Classes.Globals.calcWidthMargin(324);
+
+            //Listeners for perfecting position
+            PropertyChangedEventHandler handler = null;
+            registerBtn.PropertyChanged += (handler = (sender, e) =>
+            {
+                if (e.PropertyName == "X")
+                {
+                    toggleAgree.Margin = new Thickness((sender as Button).X, 0, 0, 0);
+                    registerBtn.PropertyChanged -= handler;
+                }
+            });
         }
 
         private void terms_Tapped(object sender, EventArgs e)
         {
-
         }
 
         private void toggleAgree_Toggled(object sender, ToggledEventArgs e)
         {
-
         }
 
         private void cancel_Tapped(object sender, EventArgs e)

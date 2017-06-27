@@ -16,7 +16,10 @@ namespace SmartNote.Views
         {
             InitializeComponent();
 
-            listView.ItemsSource = new string[]
+            // Set the "Home" page as startup page. Throws exception if more than 1 "Home" page is found
+            this.CurrentPage = Children.Where(p => p.Title == "Home").SingleOrDefault();
+
+            classList.ItemsSource = new string[]
             {
                 "Calculus One",
                 "Calculus Two",

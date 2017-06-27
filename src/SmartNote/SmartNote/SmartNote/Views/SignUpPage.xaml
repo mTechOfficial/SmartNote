@@ -38,14 +38,12 @@
         </StackLayout>
 
         <StackLayout Orientation="Horizontal"
-                     HorizontalOptions="Start" VerticalOptions="Center"
-                     Spacing="0"
-                     Padding="20, 0, 0, 0">
+                     HorizontalOptions="Start" VerticalOptions="Center">
             <Switch x:Name="toggleAgree" HorizontalOptions="Center" VerticalOptions="Center"
-                    Toggled="toggleAgree_Toggled">
+                    Toggled="toggleAgree_Toggled" Margin="26,0,0,0">
 
             </Switch>
-            
+
             <Label Text="I agree to the" TextColor="#95989A"
                    FontSize="12" FontFamily="Segoe UI"
                    x:Name="agree" HorizontalOptions="Center" VerticalOptions="Center"/>
