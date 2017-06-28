@@ -17,7 +17,7 @@ namespace SmartNote
             DBManager = new Controllers.DatabaseManager(new Controllers.RestService());
             MainPage = new SmartNote.MainPage();
             //FOR DEBUG ONLY
-            Classes.Globals.CurrentUser = new Models.User();
+            //Classes.Globals.CurrentUser = new Models.User();
         }
 
         protected override void OnStart()
@@ -34,7 +34,7 @@ namespace SmartNote
         protected override void OnResume()
         {
             // Handle when your app resumes
-            Classes.Globals.CurrentPage = startUpPage();
+            //Classes.Globals.CurrentPage = startUpPage();
         }
         private void init()
         {
